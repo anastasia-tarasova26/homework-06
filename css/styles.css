@@ -1037,6 +1037,83 @@ color: #ffffff;
   }
 }
 
+.footer-web{
+  color: #4d5ae5;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        display: inline-block;
+       
+}
+
+.team-cards{
+width:264px;
+margin: 0 auto;
+}
+
+.modal {
+  width:288px;
+}
+.paragraph-title-name{
+color: #2E2F42;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02em;
+margin-bottom: 8px;
+text-align: center;
+}
+
+.paragraph-text{
+  color: var(--SLATE, #434455);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.footer-change-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  text-align: center;
+
+}
+
+.form{
+  display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+                
+        }
+
+.text-subscribe{
+  margin-bottom: 16px;
+                     font-weight: 500;
+                     font-size: 16px;
+                      line-height: 1.5;
+                     letter-spacing: 0.02em;
+                     color: #ffffff;
+                     text-align: center;
+                 }
+
+
+.social-media {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  text-align: center;
+      }
+
+
 @media screen and (min-width:768px) {
 
   .container {
@@ -1046,6 +1123,79 @@ color: #ffffff;
           padding: 0 16px;
   
       }
+      .modal {
+        width: 408px;
+    }
+    
+      .title-post-card{
+        font-size: 56px; 
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        max-width: 496px; 
+        margin: 0 auto;
+        margin-bottom: 36px; 
+      }
 
+      .post-card{
+        padding: 112px 0;
+        color: #ffffff;
+        max-width: 1440px; 
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/Dark-bg-tablet.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        margin: 0 auto;
+      }
 
+      @media screen and (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .solutions {
+                        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/Dark-bg-tablet-2x.jpg');
+                    }
+                }
+
+                .rectangle {
+                  display:none;
+              }
+
+              .paragraph .paragraph-list{
+                display: flex;
+                gap: 72px 24px;
+              }
+
+              .paragraph-list-item{
+                width:356px;
+              }
+
+              .team-list{
+                display: flex;
+                gap: 64px 24px;
+                flex-wrap: wrap;
+                justify-content: center;
+              }
+              
+              .team-cards{
+      background-color: #FFFFFF;
+      width: 264px;
+      border-radius: 0px 0px 4px 4px;
+       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+      }
+
+      .paragraph-title-name{
+        color: #2E2F42;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+      }
+
+      .paragraph-text{
+        color: var(--SLATE, #434455);
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+      }
     }
