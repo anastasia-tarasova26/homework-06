@@ -690,7 +690,7 @@ transform: translateY(0%);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5; 
   letter-spacing: 0.02em;
   color: #FFF;
   margin-bottom: 16px;
@@ -698,10 +698,11 @@ transform: translateY(0%);
 
 .footer-social-links{
   display: flex;
-   gap:16px;
-   /* margin-right:80px;  */
+  gap:16px;
+  margin-right:80px;  
 
 }
+
 .footer-ellipse{
   background-color: #4D5AE5;
   width: 40px;
@@ -1051,6 +1052,37 @@ color: #ffffff;
        
 }
 
+.footer-change-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  text-align: center;
+}
+
+.form{
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text-subscribe{
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-social-links{
+  margin: 0;
+  padding:0;
+  
+}
+
 .team-cards{
 width:264px;
 margin: 0 auto;
@@ -1111,6 +1143,9 @@ text-align: center;
 
 @media screen and (min-width:768px) {
 
+      .mob-menu{
+        display: none;
+      }
       .container {
         width: 768px;
         margin-left: auto;
@@ -1211,10 +1246,21 @@ text-align: center;
       }
 
       .footer-change-container{
-        display: flex;
-        flex-wrap: wrap; 
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 72px 24px;
-        width:552px;
+      }
+
+      .footer-container{
+        text-align: left;
+      }
+
+      .social-media{
+        text-align: left;
+      }
+      
+      .text-subscribe{
+        text-align: left;
       }
       
 
@@ -1260,6 +1306,10 @@ text-align: center;
         padding: 0 15px;
 
        }
+
+       .mob-menu{
+        display: none;
+      }
       
        .contacts-list{
         display: flex;
@@ -1316,15 +1366,6 @@ text-align: center;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
        }
 
-       .footer-change-container{
-        display: flex;
-        align-items: baseline;
-        flex-wrap:wrap;
-        gap: 72px;
-        padding: 0;
-        margin: 0;
-       }
-
        .paragraph{
         padding: 120px 0;
        }
@@ -1334,13 +1375,15 @@ text-align: center;
         background-color: #F4F4FD;
        }
 
-       .footer{
-        padding: 100px 0 ;
-        background-color:#2e2f42;
-        margin: 0;
-        
-      }
+      
+      .footer-change-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px;
+     
+     }
 
+    
        @media screen and (min-device-pixel-ratio: 2),
        (min-resolution: 192dpi),
        (min-resolution: 2dppx) {
@@ -1348,8 +1391,6 @@ text-align: center;
                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-desktop-2x.jpg');
            }
        }
-
-
          
    }
 
